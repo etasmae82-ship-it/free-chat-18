@@ -1,0 +1,33 @@
+"https://soundfrankcoke.com/cf74x0hqn?key=3363700ad6be89ea4af8856917002a4e",
+"https://soundfrankcoke.com/ijc6jfjp58?key=2504b1f5c5b84837a984754ba806aa85",
+"https://soundfrankcoke.com/dcqqsk60?key=fe79aa1f7d2e6fdf7300a0afb2cf6754",
+"https://soundfrankcoke.com/b2ebevnu?key=547a47b397596f5c168252d4ab3c6877",
+"https://soundfrankcoke.com/s8zx2qce3v?key=5468e0ebc8cb11be3b9f29fe50797253",
+"https://soundfrankcoke.com/kccg00wf?key=29b7ad3b6ea526283787b4d91af1484c",
+"https://soundfrankcoke.com/nj3mp29f3?key=a55cd5beeba809290cad5d60ecd44a73",
+"https://soundfrankcoke.com/jdsp1z1g5v?key=c929c585e9bd3fccc9d07196cdb154f4",
+"https://soundfrankcoke.com/zazqff55?key=c959bdfe20e362923d3b370658c6bd7c",
+"https://soundfrankcoke.com/dy4gik8p?key=73b74526e6de1c127f49f9b3c4183fa7",
+"https://soundfrankcoke.com/b93yfx0xv?key=7116853fd5bf577963413bae9d533130"
+];
+
+function randomLink(){return links[Math.floor(Math.random()*links.length)];}
+for(var i=1;i<=5;i++){
+  document.getElementById("btn"+i).href=randomLink();
+}
+
+// إشعارات ديناميكية
+var messages=[
+"💬 5 new messages waiting",
+"💌 Someone liked your profile",
+"🔥 3 users chatting now",
+"❤️ New match nearby",
+"✨ Someone viewed your profile"
+];
+var notify=document.getElementById("notify");
+setInterval(function(){
+  notify.innerHTML=messages[Math.floor(Math.random()*messages.length)];
+},3000);
+</script>
+</body>
+</html>
